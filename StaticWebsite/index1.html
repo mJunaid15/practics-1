@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+<title>JunaidQure</title>
+</head>
+
+<body>
+  <header>
+      <dev class="mainheader">
+         <dev class="logo">
+             <img src="./img/logo.png" >
+         </dev>
+           <nev>
+               <a href="#">Home</a>
+               <a  href="#">Services</a>
+               <a  href="#">About</a>
+               <a  href="#">Contact</a>
+           </nev>
+           <dev class="menubtn">
+               <button>Hire Me</button>
+
+           </dev>
+
+      </dev>
+      <main>
+          <section class="left-sec">
+              <h2 class="try" onmousedown="mouseDown()" onmouseup="MouseUp()">HI, I'm Junaid.</h2>
+              <h1 id="me"> I Design User Interfaces.</h1>
+              <p>“Before software can be reusable it first has to be usable.”</p>
+              <button class="try">Make an Appointment</button>
+          </section>
+          <section class="right-sec">
+              <figure>
+                  <img src="img/mainbg.jpg" height="335px" width="500px" class="vectorPic">
+              </figure>
+
+          </section>
+      </main>
+  </header>
+  <script>
+
+function mouseDown(){
+  document.querySelector(".try").style.color ="white";
+}
+function MouseUp(){
+  document.querySelector(".try").style.color = "#F8B627";
+}
+ //event listner
+ const menter = document.getElementById("me");
+ menter.addEventListener("mouseenter", ()=>{
+     menter.style.color = "#F8B627";
+ });
+ menter.addEventListener("mouseleave",()=>{
+    menter.style.color = "black";
+ });
+
+  </script>
+</body>
+
+</html>
